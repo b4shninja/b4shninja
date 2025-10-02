@@ -1,20 +1,19 @@
 <table>
   <tr>
-    <td>
-      
-# 👋 Привет, я Павел
-🚀 **Head of DevOps Engineer @ Magnit Tech**  
-💻 Делюсь опытом в DevOps, SRE и автоматизации  
-📍 Saint-Petersburg
-
+    <td style="vertical-align: top; padding-right: 16px;">
+      <h1>👋 Привет, я Павел</h1>
+      <p>🚀 <strong>Head of DevOps Engineer @ Magnit Tech</strong><br>
+      💻 Делаюсь опытом в DevOps, SRE и автоматизации<br>
+      📍 Saint-Petersburg</p>
     </td>
-    <td width="240" align="center" valign="middle">
-      <img src="dadaya.png" alt="Pavel" width="220"/>
+    <td style="width:240px; text-align:center; vertical-align:middle;">
+      <img src="dadaya.png" alt="Pavel" width="220">
     </td>
   </tr>
 </table>
 
----
+<hr>
+
 
 ## 🧑‍💻 Обо мне  
 
