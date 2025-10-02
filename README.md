@@ -4,6 +4,7 @@
 💻 Делаюсь опытом в DevOps, SRE и автоматизации  
 📍 Saint-Petersburg  
 <img src="dadaya.png" alt="Pavel" width="200" align="right"/>
+
 ---
 
 ## 🧑‍💻 Обо мне  
