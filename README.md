@@ -1,9 +1,9 @@
+<img src="dadaya.png" alt="Pavel" width="200" align="right"/>
 # 👋 Привет, я Павел  
 
 🚀 **Head of DevOps Engineer @ Magnit Tech**  
 💻 Делаюсь опытом в DevOps, SRE и автоматизации  
 📍 Saint-Petersburg  
-<img src="dadaya.png" alt="Pavel" width="200" align="right"/>
 
 ---
 
