@@ -3,7 +3,7 @@
 🚀 **Head of DevOps Engineer @ Magnit Tech**  
 💻 Делаюсь опытом в DevOps, SRE и автоматизации  
 📍 Saint-Petersburg  
-<img src="assets/dadaya.png" alt="Pavel" width="200"/>
+<img src=dadaya.png" alt="Pavel" width="200" align="right"/>
 ---
 
 ## 🧑‍💻 Обо мне  
