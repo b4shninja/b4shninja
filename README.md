@@ -96,6 +96,7 @@
 ---
 
 ## 📚 Подборки и шпаргалки
+- ⚡ [from Zero to DevOps Hero](https://github.com/b4shninja/b4shninja/tree/main/courses/from_zero_to_devops_hero)
 - 📄 [Cheat-sheets](https://github.com/b4shninja/cheat-sheet-pdf)  
 - ⚡ [DevOps Exercises](https://github.com/b4shninja/devops-exercises)  
 - 🛠 [Ansible Tuto (RU)](https://github.com/b4shninja/ansible-tuto-rus)  
