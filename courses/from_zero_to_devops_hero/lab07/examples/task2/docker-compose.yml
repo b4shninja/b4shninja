@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: lab07_nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - web
+    networks:
+      - frontend
+    restart: unless-stopped
+
+  web:
+    build: ./app
+    container_name: lab07_web
+    environment:
+      DB_HOST: postgres
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      REDIS_HOST: ${REDIS_HOST}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - frontend
+      - backend
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: lab07_postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - backend
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: lab07_redis
+    networks:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+    name: lab07_pgdata
+
+networks:
+  frontend:
+    name: lab07_frontend
+    driver: bridge
+  backend:
+    name: lab07_backend
+    driver: bridge
